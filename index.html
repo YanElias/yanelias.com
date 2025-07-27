@@ -3,95 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site Unificado</title>
+    <title>Yaneliass Downloads</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5; /* Um cinza claro suave */
+            color: #070707;
+            line-height: 1.6;
         }
         header {
             background-color: #ffff00; /* Amarelo */
-            color: #000; /* Texto preto para contraste */
+            color: #333; /* Texto escuro para contraste no amarelo */
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: #000;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 5px;
+            color: #555;
+        }
+        nav {
+            background-color: #333; /* Barra de navegação escura */
             padding: 10px 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         nav ul {
             list-style-type: none;
             padding: 0;
-            text-align: center;
+            margin: 0;
+            display: flex; /* Para alinhar os itens horizontalmente */
+            justify-content: center;
+            flex-wrap: wrap; /* Para quebrar linha em telas pequenas */
         }
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            margin: 0 15px;
         }
         nav ul li a {
-            color: #000; /* Texto preto para contraste */
+            color: white; /* Texto branco nos links da navegação */
             text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffff00; /* Links amarelos ao passar o mouse */
         }
         .container {
-            background-color: white;
+            max-width: 960px;
+            margin: 30px auto;
             padding: 20px;
-            margin-top: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #fbff00; /* Títulos em verde para destaque */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsivo para vídeos */
+            gap: 20px;
+            justify-content: center;
+        }
+        .video-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .video-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .video-item h3 {
+            font-size: 1.2em;
+            margin: 10px;
+            color: #444;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff0000; /* Cor dos links sociais */
+            font-size: 1.5em; /* Tamanho do texto para links sociais */
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        .social-links a:hover {
+            transform: translateY(-3px);
+            color: #ffff00; /* Links amarelos ao passar o mouse */
         }
         footer {
             text-align: center;
-            margin-top: 30px;
-            padding: 10px;
+            margin-top: 40px;
+            padding: 20px;
             background-color: #ffff00; /* Amarelo */
-            color: #000; /* Texto preto para contraste */
-            font-size: 0.8em;
+            color: #333; /* Texto escuro para contraste */
+            font-size: 0.9em;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Site!</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>[Yaneliass]</h1>
+        <p>Meu espaço para [Downloads do CANAL]</p>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#videos">Vídeos Recentes</a></li>
+            <li><a href="#sobre">Sobre o Canal</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#redes">YouTube</a></li> </ul>
+    </nav>
 
     <div class="container">
         <section id="inicio">
-            <h2>Seção de Início</h2>
-            <p>Este é um parágrafo de exemplo para a sua seção de início. Sinta-se à vontade para adicionar mais conteúdo aqui.</p>
-            <p>Você pode colocar textos, imagens, ou o que mais desejar.</p>
-            <img src="https://via.placeholder.com/400x200" alt="Imagem de Exemplo" style="max-width: 100%; height: auto; display: block; margin: 15px auto;">
+            <h2>Bem-vindo(a) ao Nosso Site!</h2>
+            <p>Este é o lugar oficial para encontrar tudo sobre o canal **[Yaneliass]**.</p>
+            <p>Aqui você poderá ver nossos vídeos mais recentes, saber mais sobre a gente, e encontrar todos os links importantes para nos seguir por aí!</p>
+            <p>Seja bem-vindo(a) à nossa comunidade!</p>
         </section>
 
-        <hr>
+        <section id="videos">
+            <h2>Nossos Últimos Vídeos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <a href="https://www.youtube.com/watch?v=Y9Z1VqSeSas" target="_blank">
+                        <img src="" alt="Thumbnail do Vídeo 1">
+                        <h3>Tutorial de como resolver o invalid char at 34 position 167</h3>
+                    </a>
+                </div>
+                <div class="video-item">
+                    <a href="https://www.youtube.com/watch?v=DAMl73xGLH4" target="_blank">
+                        <img src="" alt="Thumbnail do Vídeo 2">
+                        <h3>Um Vídeo Antigo que Você Gosta</h3>
+                    </a>
+                </div>
+                <div class="video-item">
+                    <a href="https://youtu.be/3a9sZogiXpg" target="_blank">
+                        <img src="" alt="Thumbnail do Vídeo 3">
+                        <h3>Trailer</h3>
+                    </a>
+                </div>
+                </div>
+            <p style="text-align: center; margin-top: 25px;"><a href="https://www.youtube.com/@Yanyagosvlog" target="_blank" style="text-decoration: none; background-color: #fbff00; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block;">Ver Mais Vídeos no YouTube</a></p>
+        </section>
 
         <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Aqui você pode falar um pouco sobre você, sua empresa, seus objetivos ou qualquer outra informação relevante.</p>
-            <ul>
-                <li>Item 1 da lista</li>
-                <li>Item 2 da lista</li>
-                <li>Item 3 da lista</li>
-            </ul>
+            <h2>Sobre o Canal [Yaneliass]</h2>
+            <p>Olá! Sou [Yan Elias] e crio conteúdo sobre [Coisas kkk]. Meu objetivo é [Chegar A 500k].</p>
+            <p>Começamos o canal em [2024] e desde então tenho me dedicado a trazer o melhor [TIPO DE CONTEÚDO] para você. Esperamos que goste do que fazemos!</p>
+            </section>
+
+        <section id="redes">
+            <h2>Nossas Redes Sociais</h2>
+            <p>Siga-nos no YouTube para não perder nenhum vídeo novo!</p>
+            <div class="social-links">
+                <a href="" target="_blank" title="YouTube">
+                    Nosso Canal no YouTube!
+                </a>
+            </div>
         </section>
 
-        <hr>
-
         <section id="contato">
-            <h2>Entre em Contato</h2>
-            <p>Você pode me encontrar em:</p>
-            <p>Email: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
-            <p>Telefone: (XX) XXXX-XXXX</p>
-            <p>Endereço: Sua Rua, Seu Número - Sua Cidade, BR</p>
+            <h2>Fale Conosco!</h2>
+            <p>Para dúvidas, sugestões ou parcerias, entre em contato pelo e-mail:</p>
+            <p>Email: <a href="mailto:y8431666@gmail.com">y8431666@gmail.com</a></p>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Meu Primeiro Site. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Canal [Yan Eliass]. Todos os direitos reservados.</p>
+        <p>Criado com Carinho! &#x2764;&#xFE0F; para a comunidade!</p>
     </footer>
 </body>
 </html>
